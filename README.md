@@ -6,3 +6,5 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
 
 
 ## Change log
+2. Gerenciamento de memória pela JVM
+  - Aula 2.3 - Value Types e Reference Types
