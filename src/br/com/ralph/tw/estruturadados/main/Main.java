@@ -12,6 +12,7 @@ public class Main {
         do {
             System.out.println("\n --------- \n");
             System.out.println("1. Gerenciamento de memória");
+            System.out.println("2. Vetor");
             System.out.println("0. Sair");
             System.out.print("Selecione uma opção: ");
             try {
@@ -23,6 +24,9 @@ public class Main {
             switch (opcao) {
                 case 1:
                     fazerGerenciamentoDeMemoria();
+                    break;
+                case 2:
+                    fazerVetor();
                     break;
 
                 case 0: break;
@@ -66,5 +70,17 @@ public class Main {
         System.out.println(String.format("p3: %s: ", p3));
         System.out.println(String.format("p1 == p3: %b", p1 == p3));
         System.out.println(String.format("p1 equals p3: %b", p1.equals(p3)));
+    }
+
+    private static void fazerVetor() {
+        System.out.println(" --- Vetor --- ");
+        Pessoa[] vetorPessoas = new Pessoa[3];
+        vetorPessoas[0] = new Pessoa(1, "José");
+        System.out.println(vetorPessoas[0].getNome());
+        //System.out.println(vetorPessoas[1].getNome()); // NullPointerException
+        System.out.println(" ----- ");
+        int[] inteiros = new int[3];
+        System.out.println(inteiros[0]); // 0
+        System.out.println(inteiros[4]); // java.lang.ArrayIndexOutOfBoundsException
     }
 }

@@ -12,3 +12,7 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
   ![alt text](resources/img/2.4_steak_heap.png)
   - Aula 2.5 - Ponteiros e os métodos equals() e hashCode()
   ![alt text](resources/img/2.5_ponteiros_equals_hashcode.png)  
+  - Desafio de código 2.1
+
+3. Vetores
+  - Aula 3.3 - Conceitos básicos
