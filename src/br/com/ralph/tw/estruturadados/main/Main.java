@@ -1,6 +1,5 @@
 package br.com.ralph.tw.estruturadados.main;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import br.com.ralph.tw.estruturadados.modelos.Pessoa;

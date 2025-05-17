@@ -9,4 +9,4 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
 2. Gerenciamento de memória pela JVM
   - Aula 2.3 - Value Types e Reference Types
   - Aula 2.4 - Stack e Heap
-  ![alt text](resorces/img/2.4_steak_heap.png)
+  ![alt text](resources/img/2.4_steak_heap.png)
