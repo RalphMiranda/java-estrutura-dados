@@ -3,6 +3,7 @@ package br.com.ralph.tw.estruturadados.main;
 import java.util.Scanner;
 
 import br.com.ralph.tw.estruturadados.modelos.Pessoa;
+import br.com.ralph.tw.estruturadados.vetor.Vetor;
 
 public class Main {
     public static void main(String[] args) {
@@ -70,17 +71,23 @@ public class Main {
         System.out.println(String.format("p3: %s: ", p3));
         System.out.println(String.format("p1 == p3: %b", p1 == p3));
         System.out.println(String.format("p1 equals p3: %b", p1.equals(p3)));
+        System.out.println(" ----- ");
     }
 
     private static void fazerVetor() {
         System.out.println(" --- Vetor --- ");
         Pessoa[] vetorPessoas = new Pessoa[3];
         vetorPessoas[0] = new Pessoa(1, "José");
-        System.out.println(vetorPessoas[0].getNome());
-        //System.out.println(vetorPessoas[1].getNome()); // NullPointerException
+        System.out.println(String.format("vetorPessoas[0].getNome(): %s ",vetorPessoas[0].getNome()));
+        //System.out.println(String.format("vetorPessoas[1].getNome(): %s ",vetorPessoas[1].getNome())); // NullPointerException
         System.out.println(" ----- ");
         int[] inteiros = new int[3];
-        System.out.println(inteiros[0]); // 0
-        System.out.println(inteiros[4]); // java.lang.ArrayIndexOutOfBoundsException
+        System.out.println(String.format("inteiros[0]: %s", inteiros[0])); // 0
+        //System.out.println(String.format("inteiros[4]: %s", inteiros[4])); // java.lang.ArrayIndexOutOfBoundsException
+        System.out.println(" ----- ");
+        Vetor vetor = new Vetor(3);
+        vetor.inserirEm(0, new Pessoa(1,"José"));
+        System.out.println(String.format("vetor.recuperar(0): %s", vetor.recuperar(0)));
+        System.out.println(String.format("vetor.recuperar(4): %s", vetor.recuperar(4)));
     }
 }

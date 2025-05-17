@@ -15,4 +15,5 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
   - Desafio de código 2.1
 
 3. Vetores
-  - Aula 3.3 - Conceitos básicos
+  - Aula 3.4 - Conceitos básicos
+  - Aula 3.5 - Encapsulando as funcionalidades de um vetor
