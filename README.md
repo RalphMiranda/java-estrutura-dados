@@ -27,3 +27,4 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
     | double | Double |
     | int | Integer |
     | long | Long |
+  - Aula 3.8 - Criando a funcionalidade de inserção

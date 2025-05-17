@@ -92,5 +92,6 @@ public class Main {
         Vetor<Integer> vetorInteiros = new Vetor<Integer>(3);
         vetorInteiros.inserirEm(0, 1);
         System.out.println(String.format("vetorInteiros.recuperar(0): %s", vetorInteiros.recuperar(0)));
+        vetorInteiros.inserirEm(4, 1);
     }
 }
