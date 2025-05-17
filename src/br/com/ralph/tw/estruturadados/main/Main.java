@@ -89,5 +89,8 @@ public class Main {
         vetorPessoas.inserirEm(0, new Pessoa(1,"José"));
         System.out.println(String.format("vetor.recuperar(0): %s", vetorPessoas.recuperar(0)));
         //System.out.println(String.format("vetor.recuperar(4): %s", vetor.recuperar(4))); // java.lang.ArrayIndexOutOfBoundsException
+        Vetor<Integer> vetorInteiros = new Vetor<Integer>(3);
+        vetorInteiros.inserirEm(0, 1);
+        System.out.println(String.format("vetorInteiros.recuperar(0): %s", vetorInteiros.recuperar(0)));
     }
 }

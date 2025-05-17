@@ -18,3 +18,12 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
   - Aula 3.4 - Conceitos básicos
   - Aula 3.5 - Encapsulando as funcionalidades de um vetor
   - Aula 3.6 - Criando estruturas genéricas
+  - Aula 3.7 - Restrições na utilização de Generics
+    O uso de generics não permite o uso de tipos primitivos, por isso, seus Wrappers correspondentes devem utilizados
+    | Primitivo | Wrapper |
+    | - | - |
+    | boolean | Boolean |
+    | char | Character |
+    | double | Double |
+    | int | Integer |
+    | long | Long |
