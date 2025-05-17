@@ -1,21 +1,20 @@
 package br.com.ralph.tw.estruturadados.vetor;
 
-import br.com.ralph.tw.estruturadados.modelos.Pessoa;
+public class Vetor<T>{
 
-public class Vetor {
-
-    private Pessoa[] pessoas;
+    private Object[] elementos;
 
     public Vetor(int posicoes) {
-        pessoas = new Pessoa[posicoes];
+        this.elementos = new Object[posicoes];
     }
 
-    public void inserirEm(int posicao, Pessoa pessoa) {
-        pessoas[posicao] = pessoa;
+    public void inserirEm(int posicao, T elemento) {
+        this.elementos[posicao] = elemento;
     }
 
-    public Pessoa recuperar(int posicao) {
-        return pessoas[posicao];
+    @SuppressWarnings("unchecked")
+    public T recuperar(int posicao) {
+        return (T)this.elementos[posicao];
     }
 
 }

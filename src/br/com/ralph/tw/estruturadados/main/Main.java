@@ -76,18 +76,18 @@ public class Main {
 
     private static void fazerVetor() {
         System.out.println(" --- Vetor --- ");
-        Pessoa[] vetorPessoas = new Pessoa[3];
-        vetorPessoas[0] = new Pessoa(1, "José");
-        System.out.println(String.format("vetorPessoas[0].getNome(): %s ",vetorPessoas[0].getNome()));
-        //System.out.println(String.format("vetorPessoas[1].getNome(): %s ",vetorPessoas[1].getNome())); // NullPointerException
+        Pessoa[] arrayPessoas = new Pessoa[3];
+        arrayPessoas[0] = new Pessoa(1, "José");
+        System.out.println(String.format("arrayPessoas[0].getNome(): %s ",arrayPessoas[0].getNome()));
+        //System.out.println(String.format("arrayPessoas[1].getNome(): %s ",arrayPessoas[1].getNome())); // NullPointerException
         System.out.println(" ----- ");
         int[] inteiros = new int[3];
         System.out.println(String.format("inteiros[0]: %s", inteiros[0])); // 0
         //System.out.println(String.format("inteiros[4]: %s", inteiros[4])); // java.lang.ArrayIndexOutOfBoundsException
         System.out.println(" ----- ");
-        Vetor vetor = new Vetor(3);
-        vetor.inserirEm(0, new Pessoa(1,"José"));
-        System.out.println(String.format("vetor.recuperar(0): %s", vetor.recuperar(0)));
-        System.out.println(String.format("vetor.recuperar(4): %s", vetor.recuperar(4)));
+        Vetor<Pessoa> vetorPessoas = new Vetor<Pessoa>(3);
+        vetorPessoas.inserirEm(0, new Pessoa(1,"José"));
+        System.out.println(String.format("vetor.recuperar(0): %s", vetorPessoas.recuperar(0)));
+        //System.out.println(String.format("vetor.recuperar(4): %s", vetor.recuperar(4))); // java.lang.ArrayIndexOutOfBoundsException
     }
 }

@@ -17,3 +17,4 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
 3. Vetores
   - Aula 3.4 - Conceitos básicos
   - Aula 3.5 - Encapsulando as funcionalidades de um vetor
+  - Aula 3.6 - Criando estruturas genéricas
