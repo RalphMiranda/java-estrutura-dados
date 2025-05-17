@@ -10,3 +10,5 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
   - Aula 2.3 - Value Types e Reference Types
   - Aula 2.4 - Stack e Heap
   ![alt text](resources/img/2.4_steak_heap.png)
+  - Aula 2.5 - Ponteiros e os métodos equals() e hashCode()
+  ![alt text](resources/img/2.5_ponteiros_equals_hashcode.png)  

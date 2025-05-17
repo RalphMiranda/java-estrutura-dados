@@ -60,5 +60,11 @@ public class Main {
         System.out.println(String.format("p1: %s: ", p1));
         System.out.println(String.format("p2: %s: ", p2));
         System.out.println(String.format("p1 == p2: %b", p1 == p2));
+        System.out.println(" ----- ");
+        Pessoa p3 = new Pessoa(1, "José");
+        System.out.println(String.format("p1: %s: ", p1));
+        System.out.println(String.format("p3: %s: ", p3));
+        System.out.println(String.format("p1 == p3: %b", p1 == p3));
+        System.out.println(String.format("p1 equals p3: %b", p1.equals(p3)));
     }
 }
