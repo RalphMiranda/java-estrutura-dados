@@ -103,5 +103,10 @@ public class Main {
         System.out.println(String.format("vetorPessoas2: %s", vetorPessoas2));
         vetorPessoas2.inserirEm(2, new Pessoa(5, "Pessoa 5"));
         System.out.println(String.format("vetorPessoas2: %s", vetorPessoas2));
+        System.out.println(" ----- ");
+        System.out.println("Lista Pessoas: ");
+        for (int i = 0; i < vetorPessoas2.tamanho(); i++) {
+            System.out.println(vetorPessoas2.recuperar(i));
+        }
     }
 }

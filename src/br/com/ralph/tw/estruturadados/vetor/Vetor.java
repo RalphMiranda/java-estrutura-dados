@@ -18,20 +18,20 @@ public class Vetor<T>{
     }
 
     public void inserir(T elemento) {
-        if (this.posicao >= this.elementos.length) {
-            this.elementos = Arrays.copyOf(this.elementos, this.elementos.length+1);
+        if (this.posicao >= this.tamanho()) {
+            this.elementos = Arrays.copyOf(this.elementos, this.tamanho()+1);
         }
         this.elementos[this.posicao] = elemento;
         posicao++;
     }
 
     public void inserirEm(int posicao, T elemento) {
-        if (posicao > elementos.length-1) {
-            throw new IllegalArgumentException(String.format("Posição [%d] inválida para o Vetor de tamanho %d",  posicao, elementos.length));
+        if (posicao >= this.tamanho()) {
+            throw new IllegalArgumentException(String.format("Posição [%d] inválida para o Vetor de tamanho %d",  posicao, this.tamanho()));
         }
 
         if (this.elementos[posicao] != null) {
-            Object[] arrayFinal = Arrays.copyOfRange(this.elementos, posicao, this.elementos.length);
+            Object[] arrayFinal = Arrays.copyOfRange(this.elementos, posicao, this.tamanho());
             Object[] arrayInicio = new Object[posicao + 1];
 
             System.arraycopy(this.elementos, 0, arrayInicio, 0, posicao);
@@ -48,11 +48,18 @@ public class Vetor<T>{
 
     @SuppressWarnings("unchecked")
     public T recuperar(int posicao) {
+        if (posicao >= this.tamanho()) {
+            throw new IllegalArgumentException(String.format("Posição [%d] inválida para o Vetor de tamanho %d",  posicao, this.tamanho()));
+        }        
         return (T)this.elementos[posicao];
+    }
+
+    public int tamanho() {
+        return this.elementos.length;
     }
 
     @Override
     public String toString() {
-        return "Vetor [elementos=" + Arrays.toString(elementos) + "]";
+        return "Vetor [elementos=" + Arrays.toString(this.elementos) + "]";
     }
 }

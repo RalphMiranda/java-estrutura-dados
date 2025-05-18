@@ -29,3 +29,4 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
     | long | Long |
   - Aula 3.8 - Criando a funcionalidade de inserção
   - Aula 3.9 - Criando a funcionalidade de inserir em uma posição específica
+  - Aula 3.10 - Iterando sob um vetor
