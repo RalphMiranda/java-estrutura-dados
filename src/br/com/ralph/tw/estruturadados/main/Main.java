@@ -108,5 +108,11 @@ public class Main {
         for (int i = 0; i < vetorPessoas2.tamanho(); i++) {
             System.out.println(vetorPessoas2.recuperar(i));
         }
+        System.out.println(" ----- ");
+        System.out.println(String.format("Contém Pessoa [id=5, nome=Pessoa 5]: %b", vetorPessoas2.contem(new Pessoa(5, "Pessoa 5"))));
+        System.out.println(String.format("Contém Pessoa [id=10, nome=Pessoa 10]: %b", vetorPessoas2.contem(new Pessoa(10, "Pessoa 10"))));
+        System.out.println(" ----- ");
+        System.out.println(String.format("Índice Pessoa [id=5, nome=Pessoa 5]: %d", vetorPessoas2.indice(new Pessoa(5, "Pessoa 5"))));
+        System.out.println(String.format("Índice Pessoa [id=10, nome=Pessoa 10]: %d", vetorPessoas2.indice(new Pessoa(10, "Pessoa 10"))));
     }
 }

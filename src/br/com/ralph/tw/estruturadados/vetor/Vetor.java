@@ -58,6 +58,30 @@ public class Vetor<T>{
         return this.elementos.length;
     }
 
+    public boolean contem(T elemento) {
+
+        for (int i = 0; i < this.tamanho(); i++) {
+            T elementoArray = this.recuperar(i);
+            if (elementoArray != null && elementoArray.equals(elemento)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public int indice(T elemento) {
+
+        for (int i = 0; i < this.tamanho(); i++) {
+            T elementoArray = this.recuperar(i);
+            if (elementoArray != null && elementoArray.equals(elemento)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
     @Override
     public String toString() {
         return "Vetor [elementos=" + Arrays.toString(this.elementos) + "]";
