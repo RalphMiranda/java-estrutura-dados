@@ -92,6 +92,16 @@ public class Main {
         Vetor<Integer> vetorInteiros = new Vetor<Integer>(3);
         vetorInteiros.inserirEm(0, 1);
         System.out.println(String.format("vetorInteiros.recuperar(0): %s", vetorInteiros.recuperar(0)));
-        vetorInteiros.inserirEm(4, 1);
+        //vetorInteiros.inserirEm(4, 1); //IllegalArgumentException
+        System.out.println(" ----- ");
+        Vetor<Pessoa> vetorPessoas2 = new Vetor<Pessoa>();
+        vetorPessoas2.inserir(new Pessoa(1, "Pessoa 1"));
+        vetorPessoas2.inserir(new Pessoa(2, "Pessoa 2"));
+        vetorPessoas2.inserir(new Pessoa(3, "Pessoa 3"));
+        System.out.println(String.format("vetorPessoas2: %s", vetorPessoas2));
+        vetorPessoas2.inserir(new Pessoa(4, "Pessoa 4"));
+        System.out.println(String.format("vetorPessoas2: %s", vetorPessoas2));
+        vetorPessoas2.inserirEm(2, new Pessoa(5, "Pessoa 5"));
+        System.out.println(String.format("vetorPessoas2: %s", vetorPessoas2));
     }
 }

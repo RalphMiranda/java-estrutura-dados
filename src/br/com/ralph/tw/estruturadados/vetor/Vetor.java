@@ -1,5 +1,7 @@
 package br.com.ralph.tw.estruturadados.vetor;
 
+import java.util.Arrays;
+
 public class Vetor<T>{
 
     private Object[] elementos;
@@ -16,6 +18,9 @@ public class Vetor<T>{
     }
 
     public void inserir(T elemento) {
+        if (this.posicao >= this.elementos.length) {
+            this.elementos = Arrays.copyOf(this.elementos, this.elementos.length+1);
+        }
         this.elementos[this.posicao] = elemento;
         posicao++;
     }
@@ -24,7 +29,21 @@ public class Vetor<T>{
         if (posicao > elementos.length-1) {
             throw new IllegalArgumentException(String.format("Posição [%d] inválida para o Vetor de tamanho %d",  posicao, elementos.length));
         }
-        this.elementos[posicao] = elemento;
+
+        if (this.elementos[posicao] != null) {
+            Object[] arrayFinal = Arrays.copyOfRange(this.elementos, posicao, this.elementos.length);
+            Object[] arrayInicio = new Object[posicao + 1];
+
+            System.arraycopy(this.elementos, 0, arrayInicio, 0, posicao);
+            arrayInicio[posicao] = elemento;
+
+            int novoTamanho = arrayFinal.length + arrayInicio.length;
+            this.elementos = new Object[novoTamanho];
+            System.arraycopy(arrayInicio, 0, this.elementos, 0, arrayInicio.length);
+            System.arraycopy(arrayFinal, 0, this.elementos, arrayInicio.length, arrayFinal.length);
+        } else { 
+            this.elementos[posicao] = elemento;
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -32,4 +51,8 @@ public class Vetor<T>{
         return (T)this.elementos[posicao];
     }
 
+    @Override
+    public String toString() {
+        return "Vetor [elementos=" + Arrays.toString(elementos) + "]";
+    }
 }
