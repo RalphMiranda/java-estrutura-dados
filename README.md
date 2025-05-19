@@ -31,3 +31,5 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
   - Aula 3.9 - Criando a funcionalidade de inserir em uma posição específica
   - Aula 3.10 - Iterando sob um vetor
   - Aula 3.11 - Adicionando as funcionalidades contem() e indice()
+  - Aula 3.12 - Adicionando a funconalidade de remoção de elementos
+  - Desafio de código 3.1

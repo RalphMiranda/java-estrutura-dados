@@ -1,4 +1,4 @@
-package br.com.ralph.tw.estruturadados.desafios;
+package br.com.ralph.tw.estruturadados.desafios.modulo2.d1;
 
 import java.util.Scanner;
 
