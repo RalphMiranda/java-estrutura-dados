@@ -33,3 +33,4 @@ O objetivo deste projeto é entender o funcionamento e implementação básica d
   - Aula 3.11 - Adicionando as funcionalidades contem() e indice()
   - Aula 3.12 - Adicionando a funconalidade de remoção de elementos
   - Desafio de código 3.1
+  - Desafio de código 3.2
