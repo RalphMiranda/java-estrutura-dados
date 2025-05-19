@@ -114,5 +114,10 @@ public class Main {
         System.out.println(" ----- ");
         System.out.println(String.format("Índice Pessoa [id=5, nome=Pessoa 5]: %d", vetorPessoas2.indice(new Pessoa(5, "Pessoa 5"))));
         System.out.println(String.format("Índice Pessoa [id=10, nome=Pessoa 10]: %d", vetorPessoas2.indice(new Pessoa(10, "Pessoa 10"))));
+        System.out.println(" ----- ");
+        vetorPessoas2.remover(2);
+        System.out.println(vetorPessoas2.toString());
+        vetorPessoas2.remover(new Pessoa(4, "Pessoa 4"));
+        System.out.println(vetorPessoas2.toString());
     }
 }
